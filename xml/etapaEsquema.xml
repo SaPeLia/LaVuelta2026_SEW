@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<etapa 
+xmlns="http://www.uniovi.es"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.uniovi.es etapa.xsd"
+>
+    <nombre>Jaén a Sierra de la Pandera</nombre>
+    <número>14</número>
+    <longitud unidad="km">180</longitud>
+    <fecha>2026-09-05</fecha>
+    <tiempoGanador>04:15:09</tiempoGanador>
+    <velocidadMedia unidad="km/h">22</velocidadMedia>
+    <desnivel unidad="m">100</desnivel>
+    <ciudadSalida nombre="Jaén">
+        <puntoGeografico>
+            <longitud unidad="grados"> -3.7849</longitud>
+            <latitud unidad="grados">37.8888</latitud>
+            <altitud unidad="m">573</altitud>
+        </puntoGeografico>
+    </ciudadSalida>
+    <ciudadLlegada nombre="Sierra de la Pandera">
+        <puntoGeografico>
+            <longitud unidad="grados"> -3.8049</longitud>
+            <latitud unidad="grados">37.6888</latitud>
+            <altitud unidad="m">573</altitud>
+        </puntoGeografico>
+    </ciudadLlegada>
+    <tipo>montaña</tipo>
+    <referencias>
+        <referencia título="1" url="..."></referencia>
+        <referencia título="2" url="..."></referencia>
+        <referencia título="3" url="..."></referencia>
+    </referencias>
+    <multimedia>
+        <fotografías>
+            <fotografía descripción="foto1" archivo="../multimedia/foto1.jpg"></fotografía>
+            <fotografía descripción="foto2" archivo="../multimedia/foto2.jpg"></fotografía>
+            <fotografía descripción="foto3" archivo="../multimedia/foto3.jpg"></fotografía>
+        </fotografías>
+        <vídeos>
+            <vídeo descripción="vídeo1" archivo="../multimedia/vídeo1.mp4"></vídeo>
+        </vídeos>
+        <audios>
+            <audio descripción="audio1" archivo="../multimedia/audio1.mp3"></audio>
+        </audios>
+    </multimedia>
+
+    <hitos>
+        <hito>
+            <puerto  nombre="Los Villares" tipo="bonificado">
+            </puerto>
+            <distanciaDesdeSalida unidad="m">km</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados"> -3.756</longitud>
+                <latitud unidad="grados">37.6800</latitud>
+                <altitud unidad="m">1180</altitud>
+            </puntoGeografico>
+        </hito>
+        <hito>
+            <sprint tipo="intermedio">
+            </sprint>
+            <distanciaDesdeSalida unidad="m">km</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados"> -3.9390</longitud>
+                <latitud unidad="grados">37.5700</latitud>
+                <altitud unidad="m">780</altitud>
+            </puntoGeografico>
+        </hito>
+        <hito>
+           <puerto nombre="Puerto de Locubín" tipo="1ª Categoría" />
+            <distanciaDesdeSalida unidad="m">km</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados"> -3.756</longitud>
+                <latitud unidad="grados">37.6800</latitud>
+                <altitud unidad="m">1180</altitud>
+            </puntoGeografico>
+        </hito>
+    </hitos>
+    <puntosAnónimos>
+        <puntoAnónimo nombre="Punto de referencia 2">
+            <distanciaDesdeSalida unidad="m">km</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados"> -3.756</longitud>
+                <latitud unidad="grados">37.6800</latitud>
+                <altitud unidad="m">1180</altitud>
+            </puntoGeografico>
+        </puntoAnónimo>
+    </puntosAnónimos>
+
+    <clasificaciónEtapa>
+        <clasificado posición="1">
+            <corredor>Marco Brenner</corredor>
+            <equipo>Tudor Pro Cycling Team</equipo>
+            <tiempo>04:15:09</tiempo>
+            <diferencia>00:00:00</diferencia>
+        </clasificado>
+        <clasificado posición="2">
+            <corredor>Santiago Buitrago</corredor>
+            <equipo>Bahrain Victorious</equipo>
+            <tiempo>04:15:10</tiempo>
+            <diferencia>00:00:01</diferencia>
+        </clasificado>
+        <clasificado posición="3">
+            <corredor>Cristián Rodríguez</corredor>
+            <equipo>XDS Astana Team</equipo>
+            <tiempo>04:15:20</tiempo>
+            <diferencia>00:00:11</diferencia>
+        </clasificado>
+    </clasificaciónEtapa>
+
+    <clasificaciónGeneral>
+        <clasificado posición="1">
+            <corredor>Enric Mas</corredor>
+            <equipo>Movistar Team</equipo>
+            <tiempo>49:28:12</tiempo>
+            <diferencia>00:00:00</diferencia>
+        </clasificado>
+        <clasificado posición="2">
+            <corredor>Felix Gall</corredor>
+            <equipo>Decathlon CMA CGM Team</equipo>
+            <tiempo>49:30:18</tiempo>
+            <diferencia>00:02:06</diferencia>
+        </clasificado>
+        <clasificado posición="3">
+        <corredor>Primoz Roglic</corredor>
+        <equipo>Decathlon Team</equipo>
+        <tiempo>04:15:20</tiempo>
+        <diferencia>00:00:00</diferencia>
+        </clasificado>
+    </clasificaciónGeneral>
+
+    <clasificaciónEquipos>
+        <equipoClasificación posición="1">
+            <nombre>Decathlon Team</nombre>
+            <diferencia>00:00:00</diferencia>
+        </equipoClasificación>
+        <equipoClasificación posición="2">
+            <nombre>Astana Team</nombre>
+            <diferencia>00:25:00</diferencia>
+        </equipoClasificación>
+        <equipoClasificación posición="3">
+            <nombre>Bahrain Team</nombre>
+            <diferencia>00:34:00</diferencia>
+        </equipoClasificación>
+
+    </clasificaciónEquipos>
+
+
+</etapa>

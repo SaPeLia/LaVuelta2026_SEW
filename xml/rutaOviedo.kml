@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <Placemark>
+      <name>Escuela Ingeniería Informática</name>
+      <description>Universidad de Oviedo</description>
+      <Point>
+        <coordinates>-5.8513,43.355,0.0</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Estadio Universitario</name>
+      <description>Universidad de Oviedo</description>
+      <Point>
+        <coordinates>-5.853069841342697,43.35487460099027,0.0</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Polideportivo Universitario</name>
+      <description>Universidad de Oviedo</description>
+      <Point>
+        <coordinates>-5.85260611648946,43.35423714086568,0.0</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </Point>
+    </Placemark>
+    <name>Ruta Oviedo</name>
+    <Placemark>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellation>1</tessellation>
+        <coordinates>-5.8513,43.3550,0.0
+-5.853069841342697,43.35487460099027,0.0
+-5.85260611648946,43.35423714086568,0.0
+-5.8513,43.3550,0.0</coordinates>
+        <altitudeMode>relativeToGround</altitudeMode>
+      </LineString>
+      <Style>
+        <LineStyle>
+          <color>#ff0000ff</color>
+          <width>5</width>
+        </LineStyle>
+      </Style>
+    </Placemark>
+  </Document>
+</kml>

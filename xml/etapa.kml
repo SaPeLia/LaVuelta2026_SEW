@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+
+<Style id="rojo">
+    <IconStyle>
+        <color>ff0000ff</color>
+    </IconStyle>
+</Style>
+
+<Style id="verde">
+    <IconStyle>
+        <color>ff00ff00</color>
+    </IconStyle>
+</Style>
+
+<Style id="azul">
+    <IconStyle>
+        <color>ffff0000</color>
+    </IconStyle>
+</Style>
+
+<Style id="amarillo">
+    <IconStyle>
+        <color>ff00ffff</color>
+    </IconStyle>
+</Style>
+
+
+<Placemark>
+    <name>Salida</name>
+    <styleUrl>#rojo</styleUrl>
+    <Point>
+        <coordinates>-3.7849,37.8888,0</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+    <name>Llegada</name>
+    <styleUrl>#rojo</styleUrl>
+    <Point>
+        <coordinates>-3.8049,37.6888,0</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+    <name>Puerto</name>
+    <styleUrl>#verde</styleUrl>
+    <Point>
+        <coordinates>-3.756,37.6800,0</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+    <name>Puerto</name>
+    <styleUrl>#verde</styleUrl>
+    <Point>
+        <coordinates>-3.756,37.6800,0</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+    <name>Sprint</name>
+    <styleUrl>#azul</styleUrl>
+    <Point>
+        <coordinates>-3.9390,37.5700,0</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+    <name>Punto anónimo</name>
+    <styleUrl>#amarillo</styleUrl>
+    <Point>
+        <coordinates>-3.756,37.6800,0</coordinates>
+    </Point>
+</Placemark>
+
+<Placemark>
+    <name>Recorrido</name>
+    <Style>
+        <LineStyle>
+            <color>ff0000ff</color>
+            <width>4</width>
+        </LineStyle>
+    </Style>
+    <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+-3.7849,37.8888,0
+-3.8049,37.6888,0
+-3.756,37.6800,0
+-3.9390,37.5700,0
+-3.756,37.6800,0
+-3.756,37.6800,0
+
+        </coordinates>
+    </LineString>
+</Placemark>
+
+</Document>
+</kml>

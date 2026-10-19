@@ -1,0 +1,180 @@
+<!ELEMENT etapa (
+    nombre,
+    número,
+    longitud,
+    fecha,
+    tiempoGanador,
+    velocidadMedia,
+    desnivel,
+    ciudadSalida,
+    ciudadLlegada,
+    tipo,
+    referencias,
+    multimedia,
+    hitos,
+    puntosAnónimos,
+    clasificaciónEtapa,
+    clasificaciónGeneral,
+    clasificaciónEquipos
+)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT número (#PCDATA)>
+<!ELEMENT longitud (#PCDATA)>
+<!ATTLIST longitud unidad CDATA #REQUIRED
+>
+
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT tiempoGanador (#PCDATA)>
+
+<!ELEMENT velocidadMedia (#PCDATA)>
+<!ATTLIST velocidadMedia unidad CDATA #REQUIRED
+>
+
+<!ELEMENT desnivel (#PCDATA)>
+<!ATTLIST desnivel unidad CDATA #REQUIRED
+>
+
+
+<!-- CIUDADES -->
+
+<!ELEMENT ciudadSalida (puntoGeografico)>
+<!ATTLIST ciudadSalida nombre CDATA #REQUIRED
+>
+
+<!ELEMENT ciudadLlegada (puntoGeografico)>
+<!ATTLIST ciudadLlegada nombre CDATA #REQUIRED
+>
+
+<!ELEMENT puntoGeografico (
+    longitud,
+    latitud,
+    altitud
+)>
+
+<!ELEMENT latitud (#PCDATA)>
+<!ATTLIST latitud unidad CDATA #REQUIRED
+>
+
+<!ELEMENT altitud (#PCDATA)>
+<!ATTLIST altitud unidad CDATA #REQUIRED
+>
+
+
+<!-- REFERENCIAS -->
+
+<!ELEMENT referencias (referencia+)>
+
+<!ELEMENT referencia EMPTY>
+<!ATTLIST referencia
+    título CDATA #REQUIRED
+    url CDATA #REQUIRED
+>
+
+
+<!-- MULTIMEDIA -->
+
+<!ELEMENT multimedia (
+    fotografías+,
+    vídeos+,
+    audios+
+)>
+
+<!ELEMENT fotografías (fotografía+)>
+
+<!ELEMENT fotografía EMPTY>
+<!ATTLIST fotografía descripción CDATA #REQUIRED
+    archivo CDATA #REQUIRED
+>
+
+<!ELEMENT vídeos (vídeo+)>
+
+<!ELEMENT vídeo EMPTY>
+<!ATTLIST vídeo descripción CDATA #REQUIRED
+    archivo CDATA #REQUIRED
+>
+
+<!ELEMENT audios (audio+)>
+
+<!ELEMENT audio EMPTY>
+<!ATTLIST audio
+    descripción CDATA #REQUIRED
+    archivo CDATA #REQUIRED
+>
+
+
+<!-- HITOS -->
+
+<!ELEMENT hitos (hito+)>
+
+<!ELEMENT hito (
+    (puerto | sprint),
+    distanciaDesdeSalida,
+    puntoGeografico
+)>
+
+<!ELEMENT puerto EMPTY>
+<!ATTLIST puerto
+    tipo CDATA #REQUIRED
+    nombre CDATA #REQUIRED
+>
+
+<!ELEMENT sprint EMPTY>
+<!ATTLIST sprint
+    tipo CDATA #REQUIRED
+>
+
+<!ELEMENT distanciaDesdeSalida (#PCDATA)>
+<!ATTLIST distanciaDesdeSalida unidad CDATA #REQUIRED
+>
+
+
+<!-- PUNTOS ANÓNIMOS -->
+
+<!ELEMENT puntosAnónimos (puntoAnónimo+)>
+
+<!ELEMENT puntoAnónimo (
+    distanciaDesdeSalida,
+    puntoGeografico
+)>
+
+<!ATTLIST puntoAnónimo nombre CDATA #REQUIRED
+>
+
+
+<!-- CLASIFICACIÓN DE LA ETAPA -->
+
+<!ELEMENT clasificaciónEtapa (clasificado+)>
+
+<!ELEMENT clasificado (
+    corredor,
+    nombreEquipo,
+    tiempo,
+    diferencia
+)>
+
+<!ATTLIST clasificado posición CDATA #REQUIRED
+>
+
+<!ELEMENT corredor (#PCDATA)>
+<!ELEMENT nombreEquipo (#PCDATA)>
+<!ELEMENT tiempo (#PCDATA)>
+<!ELEMENT diferencia (#PCDATA)>
+
+
+<!-- CLASIFICACIÓN GENERAL -->
+
+<!ELEMENT clasificaciónGeneral (clasificado+)>
+
+
+<!-- CLASIFICACIÓN DE EQUIPOS -->
+
+<!ELEMENT clasificaciónEquipos (equipoClasificación+)>
+
+<!ELEMENT equipoClasificación (
+    nombre,
+    diferencia
+)>
+
+<!ATTLIST equipoClasificación posición CDATA #REQUIRED
+>
