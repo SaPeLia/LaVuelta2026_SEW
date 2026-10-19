@@ -1,92 +1,221 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<etapa 
-xmlns="http://www.uniovi.es"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.uniovi.es etapa.xsd"
->
+<etapa xmlns="http://www.uniovi.es" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.uniovi.es etapa.xsd">
     <nombre>Jaén a Sierra de la Pandera</nombre>
     <número>14</número>
-    <longitud unidad="km">180</longitud>
+    <longitud unidad="km">154.5</longitud>
     <fecha>2026-09-05</fecha>
     <tiempoGanador>04:15:09</tiempoGanador>
     <velocidadMedia unidad="km/h">22</velocidadMedia>
     <desnivel unidad="m">100</desnivel>
     <ciudadSalida nombre="Jaén">
         <puntoGeografico>
-            <longitud unidad="grados"> -3.7849</longitud>
-            <latitud unidad="grados">37.8888</latitud>
+            <longitud unidad="grados">-3.7849</longitud>
+            <latitud unidad="grados">37.7796</latitud>
             <altitud unidad="m">573</altitud>
         </puntoGeografico>
     </ciudadSalida>
     <ciudadLlegada nombre="Sierra de la Pandera">
         <puntoGeografico>
-            <longitud unidad="grados"> -3.8049</longitud>
+            <longitud unidad="grados">-3.8049</longitud>
             <latitud unidad="grados">37.6888</latitud>
-            <altitud unidad="m">573</altitud>
+            <altitud unidad="m">1830</altitud>
         </puntoGeografico>
     </ciudadLlegada>
     <tipo>montaña</tipo>
     <referencias>
-        <referencia título="1" url="..."></referencia>
-        <referencia título="2" url="..."></referencia>
-        <referencia título="3" url="..."></referencia>
+        <referencia título="1" url="..." />
+        <referencia título="2" url="..." />
+        <referencia título="3" url="..." />
     </referencias>
     <multimedia>
         <fotografías>
-            <fotografía descripción="foto1" archivo="../multimedia/foto1.jpg"></fotografía>
-            <fotografía descripción="foto2" archivo="../multimedia/foto2.jpg"></fotografía>
-            <fotografía descripción="foto3" archivo="../multimedia/foto3.jpg"></fotografía>
+            <fotografía descripción="foto1" archivo="../multimedia/foto1.jpg" />
+            <fotografía descripción="foto2" archivo="../multimedia/foto2.jpg" />
+            <fotografía descripción="foto3" archivo="../multimedia/foto3.jpg" />
         </fotografías>
         <vídeos>
-            <vídeo descripción="vídeo1" archivo="../multimedia/vídeo1.mp4"></vídeo>
+            <vídeo descripción="vídeo1" archivo="../multimedia/vídeo1.mp4" />
         </vídeos>
         <audios>
-            <audio descripción="audio1" archivo="../multimedia/audio1.mp3"></audio>
+            <audio descripción="audio1" archivo="../multimedia/audio1.mp3" />
         </audios>
     </multimedia>
-
     <hitos>
         <hito>
-            <puerto  nombre="Los Villares" tipo="bonificado">
-            </puerto>
-            <distanciaDesdeSalida unidad="m">km</distanciaDesdeSalida>
+            <puerto nombre="Puerto de Los Villares" categoría="2ª Categoría" bonificado="no" />
+            <distanciaDesdeSalida unidad="km">82.3</distanciaDesdeSalida>
             <puntoGeografico>
-                <longitud unidad="grados"> -3.756</longitud>
-                <latitud unidad="grados">37.6800</latitud>
-                <altitud unidad="m">1180</altitud>
+                <longitud unidad="grados">-3.8150</longitud>
+                <latitud unidad="grados">37.6860</latitud>
+                <altitud unidad="m">1250</altitud>
             </puntoGeografico>
         </hito>
         <hito>
-            <sprint tipo="intermedio">
-            </sprint>
-            <distanciaDesdeSalida unidad="m">km</distanciaDesdeSalida>
+            <sprint tipo="intermedio" bonificado="no" />
+            <distanciaDesdeSalida unidad="km">123.6</distanciaDesdeSalida>
             <puntoGeografico>
-                <longitud unidad="grados"> -3.9390</longitud>
+                <longitud unidad="grados">-3.6440</longitud>
+                <latitud unidad="grados">37.5790</latitud>
+                <altitud unidad="m">950</altitud>
+            </puntoGeografico>
+        </hito>
+        <hito>
+            <puerto nombre="Puerto de Locubín" categoría="2ª Categoría" bonificado="no" />
+            <distanciaDesdeSalida unidad="km">133.2</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados">-3.8150</longitud>
                 <latitud unidad="grados">37.5700</latitud>
-                <altitud unidad="m">780</altitud>
+                <altitud unidad="m">1200</altitud>
             </puntoGeografico>
         </hito>
         <hito>
-           <puerto nombre="Puerto de Locubín" tipo="1ª Categoría" />
-            <distanciaDesdeSalida unidad="m">km</distanciaDesdeSalida>
+            <puerto nombre="Sierra de la Pandera" categoría="1ª Categoría" bonificado="no" />
+            <distanciaDesdeSalida unidad="km">154.5</distanciaDesdeSalida>
             <puntoGeografico>
-                <longitud unidad="grados"> -3.756</longitud>
-                <latitud unidad="grados">37.6800</latitud>
-                <altitud unidad="m">1180</altitud>
+                <longitud unidad="grados">-3.8049</longitud>
+                <latitud unidad="grados">37.6888</latitud>
+                <altitud unidad="m">1830</altitud>
             </puntoGeografico>
         </hito>
     </hitos>
     <puntosAnónimos>
-        <puntoAnónimo nombre="Punto de referencia 2">
-            <distanciaDesdeSalida unidad="m">km</distanciaDesdeSalida>
+        <puntoAnónimo nombre="Salida de Jaén">
+            <distanciaDesdeSalida unidad="km">0.0</distanciaDesdeSalida>
             <puntoGeografico>
-                <longitud unidad="grados"> -3.756</longitud>
-                <latitud unidad="grados">37.6800</latitud>
-                <altitud unidad="m">1180</altitud>
+                <longitud unidad="grados">-3.7849</longitud>
+                <latitud unidad="grados">37.7796</latitud>
+                <altitud unidad="m">573</altitud>
+            </puntoGeografico>
+        </puntoAnónimo>
+        <puntoAnónimo nombre="Rotonda dirección Mancha Real">
+            <distanciaDesdeSalida unidad="km">3.4</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados">-3.7800</longitud>
+                <latitud unidad="grados">37.7900</latitud>
+                <altitud unidad="m">580</altitud>
+            </puntoGeografico>
+        </puntoAnónimo>
+        <puntoAnónimo nombre="Cruce dirección Mancha Real">
+            <distanciaDesdeSalida unidad="km">9.1</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados">-3.7700</longitud>
+                <latitud unidad="grados">37.8000</latitud>
+                <altitud unidad="m">610</altitud>
+            </puntoGeografico>
+        </puntoAnónimo>
+        <puntoAnónimo nombre="Mancha Real">
+            <distanciaDesdeSalida unidad="km">13.5</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados">-3.6120</longitud>
+                <latitud unidad="grados">37.7860</latitud>
+                <altitud unidad="m">750</altitud>
+            </puntoGeografico>
+        </puntoAnónimo>
+        <puntoAnónimo nombre="Cruce dirección Torres">
+            <distanciaDesdeSalida unidad="km">24.6</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados">-3.6500</longitud>
+                <latitud unidad="grados">37.7500</latitud>
+                <altitud unidad="m">850</altitud>
+            </puntoGeografico>
+        </puntoAnónimo>
+        <puntoAnónimo nombre="Torres">
+            <distanciaDesdeSalida unidad="km">33.1</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados">-3.5100</longitud>
+                <latitud unidad="grados">37.7850</latitud>
+                <altitud unidad="m">880</altitud>
+            </puntoGeografico>
+        </puntoAnónimo>
+        <puntoAnónimo nombre="Pegalajar">
+            <distanciaDesdeSalida unidad="km">52.9</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados">-3.6500</longitud>
+                <latitud unidad="grados">37.7400</latitud>
+                <altitud unidad="m">800</altitud>
+            </puntoGeografico>
+        </puntoAnónimo>
+        <puntoAnónimo nombre="Rotonda dirección Jaén">
+            <distanciaDesdeSalida unidad="km">57.9</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados">-3.7200</longitud>
+                <latitud unidad="grados">37.7500</latitud>
+                <altitud unidad="m">700</altitud>
+            </puntoGeografico>
+        </puntoAnónimo>
+        <puntoAnónimo nombre="La Guardia de Jaén">
+            <distanciaDesdeSalida unidad="km">61.2</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados">-3.6900</longitud>
+                <latitud unidad="grados">37.7450</latitud>
+                <altitud unidad="m">600</altitud>
+            </puntoGeografico>
+        </puntoAnónimo>
+        <puntoAnónimo nombre="Puente Jontoya">
+            <distanciaDesdeSalida unidad="km">67.2</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados">-3.7700</longitud>
+                <latitud unidad="grados">37.7350</latitud>
+                <altitud unidad="m">550</altitud>
+            </puntoGeografico>
+        </puntoAnónimo>
+        <puntoAnónimo nombre="Los Villares">
+            <distanciaDesdeSalida unidad="km">82.3</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados">-3.8150</longitud>
+                <latitud unidad="grados">37.6860</latitud>
+                <altitud unidad="m">980</altitud>
+            </puntoGeografico>
+        </puntoAnónimo>
+        <puntoAnónimo nombre="Fuensanta de Martos">
+            <distanciaDesdeSalida unidad="km">101.2</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados">-3.9050</longitud>
+                <latitud unidad="grados">37.6470</latitud>
+                <altitud unidad="m">720</altitud>
+            </puntoGeografico>
+        </puntoAnónimo>
+        <puntoAnónimo nombre="El Regüelo">
+            <distanciaDesdeSalida unidad="km">109.3</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados">-3.8900</longitud>
+                <latitud unidad="grados">37.6100</latitud>
+                <altitud unidad="m">800</altitud>
+            </puntoGeografico>
+        </puntoAnónimo>
+        <puntoAnónimo nombre="Castillo de Locubín">
+            <distanciaDesdeSalida unidad="km">123.1</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados">-3.9430</longitud>
+                <latitud unidad="grados">37.5280</latitud>
+                <altitud unidad="m">700</altitud>
+            </puntoGeografico>
+        </puntoAnónimo>
+        <puntoAnónimo nombre="Comienzo del puerto final">
+            <distanciaDesdeSalida unidad="km">124.4</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados">-3.9000</longitud>
+                <latitud unidad="grados">37.5600</latitud>
+                <altitud unidad="m">850</altitud>
+            </puntoGeografico>
+        </puntoAnónimo>
+        <puntoAnónimo nombre="Valdepeñas de Jaén">
+            <distanciaDesdeSalida unidad="km">139.5</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados">-3.8150</longitud>
+                <latitud unidad="grados">37.5870</latitud>
+                <altitud unidad="m">920</altitud>
+            </puntoGeografico>
+        </puntoAnónimo>
+        <puntoAnónimo nombre="Giro a la derecha en la ascensión">
+            <distanciaDesdeSalida unidad="km">146.1</distanciaDesdeSalida>
+            <puntoGeografico>
+                <longitud unidad="grados">-3.8100</longitud>
+                <latitud unidad="grados">37.6300</latitud>
+                <altitud unidad="m">1200</altitud>
             </puntoGeografico>
         </puntoAnónimo>
     </puntosAnónimos>
-
     <clasificaciónEtapa>
         <clasificado posición="1">
             <corredor>Marco Brenner</corredor>
@@ -107,7 +236,6 @@ xsi:schemaLocation="http://www.uniovi.es etapa.xsd"
             <diferencia>00:00:11</diferencia>
         </clasificado>
     </clasificaciónEtapa>
-
     <clasificaciónGeneral>
         <clasificado posición="1">
             <corredor>Enric Mas</corredor>
@@ -122,13 +250,12 @@ xsi:schemaLocation="http://www.uniovi.es etapa.xsd"
             <diferencia>00:02:06</diferencia>
         </clasificado>
         <clasificado posición="3">
-        <corredor>Primoz Roglic</corredor>
-        <equipo>Decathlon Team</equipo>
-        <tiempo>04:15:20</tiempo>
-        <diferencia>00:00:00</diferencia>
+            <corredor>Primoz Roglic</corredor>
+            <equipo>Decathlon Team</equipo>
+            <tiempo>49:30:18</tiempo>
+            <diferencia>00:00:00</diferencia>
         </clasificado>
     </clasificaciónGeneral>
-
     <clasificaciónEquipos>
         <equipoClasificación posición="1">
             <nombre>Decathlon Team</nombre>
@@ -142,8 +269,5 @@ xsi:schemaLocation="http://www.uniovi.es etapa.xsd"
             <nombre>Bahrain Team</nombre>
             <diferencia>00:34:00</diferencia>
         </equipoClasificación>
-
     </clasificaciónEquipos>
-
-
 </etapa>

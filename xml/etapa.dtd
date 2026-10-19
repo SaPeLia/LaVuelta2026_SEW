@@ -36,8 +36,6 @@
 >
 
 
-<!-- CIUDADES -->
-
 <!ELEMENT ciudadSalida (puntoGeografico)>
 <!ATTLIST ciudadSalida nombre CDATA #REQUIRED
 >
@@ -61,8 +59,6 @@
 >
 
 
-<!-- REFERENCIAS -->
-
 <!ELEMENT referencias (referencia+)>
 
 <!ELEMENT referencia EMPTY>
@@ -71,8 +67,6 @@
     url CDATA #REQUIRED
 >
 
-
-<!-- MULTIMEDIA -->
 
 <!ELEMENT multimedia (
     fotografías+,
@@ -103,8 +97,6 @@
 >
 
 
-<!-- HITOS -->
-
 <!ELEMENT hitos (hito+)>
 
 <!ELEMENT hito (
@@ -129,8 +121,6 @@
 >
 
 
-<!-- PUNTOS ANÓNIMOS -->
-
 <!ELEMENT puntosAnónimos (puntoAnónimo+)>
 
 <!ELEMENT puntoAnónimo (
@@ -140,9 +130,6 @@
 
 <!ATTLIST puntoAnónimo nombre CDATA #REQUIRED
 >
-
-
-<!-- CLASIFICACIÓN DE LA ETAPA -->
 
 <!ELEMENT clasificaciónEtapa (clasificado+)>
 
@@ -162,12 +149,9 @@
 <!ELEMENT diferencia (#PCDATA)>
 
 
-<!-- CLASIFICACIÓN GENERAL -->
 
 <!ELEMENT clasificaciónGeneral (clasificado+)>
 
-
-<!-- CLASIFICACIÓN DE EQUIPOS -->
 
 <!ELEMENT clasificaciónEquipos (equipoClasificación+)>
 

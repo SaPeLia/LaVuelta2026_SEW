@@ -1,101 +1,252 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
+    <name>Etapa de ciclismo</name>
 
-<Style id="rojo">
-    <IconStyle>
-        <color>ff0000ff</color>
-    </IconStyle>
-</Style>
-
-<Style id="verde">
-    <IconStyle>
-        <color>ff00ff00</color>
-    </IconStyle>
-</Style>
-
-<Style id="azul">
-    <IconStyle>
-        <color>ffff0000</color>
-    </IconStyle>
-</Style>
-
-<Style id="amarillo">
-    <IconStyle>
-        <color>ff00ffff</color>
-    </IconStyle>
-</Style>
-
-
-<Placemark>
-    <name>Salida</name>
-    <styleUrl>#rojo</styleUrl>
-    <Point>
-        <coordinates>-3.7849,37.8888,0</coordinates>
-    </Point>
-</Placemark>
-
-<Placemark>
-    <name>Llegada</name>
-    <styleUrl>#rojo</styleUrl>
-    <Point>
-        <coordinates>-3.8049,37.6888,0</coordinates>
-    </Point>
-</Placemark>
-
-<Placemark>
-    <name>Puerto</name>
-    <styleUrl>#verde</styleUrl>
-    <Point>
-        <coordinates>-3.756,37.6800,0</coordinates>
-    </Point>
-</Placemark>
-
-<Placemark>
-    <name>Puerto</name>
-    <styleUrl>#verde</styleUrl>
-    <Point>
-        <coordinates>-3.756,37.6800,0</coordinates>
-    </Point>
-</Placemark>
-
-<Placemark>
-    <name>Sprint</name>
-    <styleUrl>#azul</styleUrl>
-    <Point>
-        <coordinates>-3.9390,37.5700,0</coordinates>
-    </Point>
-</Placemark>
-
-<Placemark>
-    <name>Punto anónimo</name>
-    <styleUrl>#amarillo</styleUrl>
-    <Point>
-        <coordinates>-3.756,37.6800,0</coordinates>
-    </Point>
-</Placemark>
-
-<Placemark>
-    <name>Recorrido</name>
-    <Style>
-        <LineStyle>
+    <Style id="rojo">
+        <IconStyle>
             <color>ff0000ff</color>
-            <width>4</width>
-        </LineStyle>
+        </IconStyle>
     </Style>
-    <LineString>
-        <tessellate>1</tessellate>
-        <coordinates>
--3.7849,37.8888,0
--3.8049,37.6888,0
--3.756,37.6800,0
--3.9390,37.5700,0
--3.756,37.6800,0
--3.756,37.6800,0
 
-        </coordinates>
-    </LineString>
-</Placemark>
+    <Style id="verde">
+        <IconStyle>
+            <color>ff00ff00</color>
+        </IconStyle>
+    </Style>
 
+    <Style id="azul">
+        <IconStyle>
+            <color>ffff0000</color>
+        </IconStyle>
+    </Style>
+
+    <Style id="amarillo">
+        <IconStyle>
+            <color>ff00ffff</color>
+        </IconStyle>
+    </Style>
+
+    <Placemark>
+        <name>Jaén</name>
+        <styleUrl>#rojo</styleUrl>
+        <Point>
+            <coordinates>-3.7849,37.7796,573</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Sierra de la Pandera</name>
+        <styleUrl>#rojo</styleUrl>
+        <Point>
+            <coordinates>-3.8049,37.6888,1830</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Puerto de Los Villares</name>
+        <styleUrl>#verde</styleUrl>
+        <Point>
+            <coordinates>-3.8150,37.6860,1250</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Sprint intermedio</name>
+        <styleUrl>#azul</styleUrl>
+        <Point>
+            <coordinates>-3.6440,37.5790,950</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Puerto de Locubín</name>
+        <styleUrl>#verde</styleUrl>
+        <Point>
+            <coordinates>-3.8150,37.5700,1200</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Sierra de la Pandera</name>
+        <styleUrl>#verde</styleUrl>
+        <Point>
+            <coordinates>-3.8049,37.6888,1830</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Salida de Jaén</name>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+            <coordinates>-3.7849,37.7796,573</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Rotonda dirección Mancha Real</name>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+            <coordinates>-3.7800,37.7900,580</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Cruce dirección Mancha Real</name>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+            <coordinates>-3.7700,37.8000,610</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Mancha Real</name>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+            <coordinates>-3.6120,37.7860,750</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Cruce dirección Torres</name>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+            <coordinates>-3.6500,37.7500,850</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Torres</name>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+            <coordinates>-3.5100,37.7850,880</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Pegalajar</name>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+            <coordinates>-3.6500,37.7400,800</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Rotonda dirección Jaén</name>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+            <coordinates>-3.7200,37.7500,700</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>La Guardia de Jaén</name>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+            <coordinates>-3.6900,37.7450,600</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Puente Jontoya</name>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+            <coordinates>-3.7700,37.7350,550</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Los Villares</name>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+            <coordinates>-3.8150,37.6860,980</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Fuensanta de Martos</name>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+            <coordinates>-3.9050,37.6470,720</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>El Regüelo</name>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+            <coordinates>-3.8900,37.6100,800</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Castillo de Locubín</name>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+            <coordinates>-3.9430,37.5280,700</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Comienzo del puerto final</name>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+            <coordinates>-3.9000,37.5600,850</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Valdepeñas de Jaén</name>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+            <coordinates>-3.8150,37.5870,920</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Giro a la derecha en la ascensión</name>
+        <styleUrl>#amarillo</styleUrl>
+        <Point>
+            <coordinates>-3.8100,37.6300,1200</coordinates>
+        </Point>
+    </Placemark>
+
+    <Placemark>
+        <name>Recorrido de la etapa</name>
+        <Style>
+            <LineStyle>
+                <color>ff0000ff</color>
+                <width>4</width>
+            </LineStyle>
+        </Style>
+        <LineString>
+            <tessellate>1</tessellate>
+            <coordinates>
+                -3.7849,37.7796,573
+                -3.7849,37.7796,573
+                -3.7800,37.7900,580
+                -3.7700,37.8000,610
+                -3.6120,37.7860,750
+                -3.6500,37.7500,850
+                -3.5100,37.7850,880
+                -3.6500,37.7400,800
+                -3.7200,37.7500,700
+                -3.6900,37.7450,600
+                -3.7700,37.7350,550
+                -3.8150,37.6860,1250
+                -3.8150,37.6860,980
+                -3.9050,37.6470,720
+                -3.8900,37.6100,800
+                -3.9430,37.5280,700
+                -3.6440,37.5790,950
+                -3.9000,37.5600,850
+                -3.8150,37.5700,1200
+                -3.8150,37.5870,920
+                -3.8100,37.6300,1200
+                -3.8049,37.6888,1830
+                -3.8049,37.6888,1830
+            </coordinates>
+        </LineString>
+    </Placemark>
 </Document>
 </kml>
