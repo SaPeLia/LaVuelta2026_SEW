@@ -4,10 +4,60 @@
 /* ***************************************/
 /*    DATOS ESTUDIANTE                   */
 /* --------------------------------------*/
-/*  Nombre y Apellidos: Sahilpreet Sing Kaur */
+/*  Nombre y Apellidos: Sahilpreet Singh Kaur */
 /*  Correo electrónico (uniovi): uo308272@uniovi.es */
 /*  Grupo de laboratorio: L.5            */
 /* ***************************************/
+body {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Cabecera */
+header {
+    padding: 1em;
+}
+
+/* Menú de navegación */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+/* Contenido principal */
+main {
+    padding: 1em;
+    min-height: 300px;
+}
+
+/* Pie de página */
+footer {
+    padding: 1em;
+    text-align: center;
+}
 
 
 
+/*Especificidad: 0,0,2*/
+section:has(picture) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*Especificidad: 0,0,3*/
+section:has(picture) h3 {
+    flex-basis: 100%;
+}
+
+/*Especificidad: 0,0,3*/
+section:has(picture) picture {
+    order: 1;
+}
+
+/*Especificidad: 0,0,3*/
+section:has(picture) ul {
+    order: 2;
+    list-style: none;
+}

@@ -15,43 +15,186 @@
     <!--Enlace a las hojas de estilo-->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="icon" href="multimedia/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
     <!-- contenido de juegos.html  -->
     <header>
-        <h1>
-            La LaVuelta2026
-        </h1>
+        <h1><a href="index.html">LaVuelta2026</a></h1>
+        <nav>
+            <a href="index.html" title="Página de inicio del proyecto">Inicio</a>
+            <a href="ciclista.html" title="Información sobre el ciclista">Ciclista</a>
+            <a href="equipo.html" title="Información sobre el equipo">Equipo</a>
+            <a href="etapa.html" title="Información sobre la etapa">Etapa</a>
+            <a href="meteorologia.html" title="Información meteorológica">Meteorología</a>
+            <a href="clasificaciones.html" title="Clasificaciones de La Vuelta">Clasificaciones</a>
+            <a href="juegos.html" title="Juegos relacionados con La Vuelta" aria-current="page">Juegos</a>
+            <a href="ayuda.html" title="Ayuda sobre el proyecto">Ayuda</a>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html" title="Página de inicio del proyecto">Inicio</a>
-        <a href="ciclista.html" title="Información sobre el ciclista">Ciclista</a>
-        <a href="equipo.html" title="Información sobre el equipo">Equipo</a>
-        <a href="etapa.html" title="Información sobre la etapa">Etapa</a>
-        <a href="meteorologia.html" title="Información meteorológica">Meteorología</a>
-        <a href="clasificaciones.html" title="Clasificaciones de La Vuelta">Clasificaciones</a>
-        <a href="juegos.html" title="Juegos relacionados con La Vuelta">Juegos</a>
-        <a href="ayuda.html" title="Ayuda sobre el proyecto">Ayuda</a>
+    <nav aria-label="migas">
+        <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li> &gt;&gt; </li>
+            <li>Juegos</li>
+        </ol>
     </nav>
-    <h2>Juegos</h2>
-    <h3>¿Conoces la etapa?</h3>
-    <p>Contesta a estas 10 preguntas sobre la información de la etapa para saber cuanto conoces esta etapa</p>
-    <form>
-        <fieldset>
-            <legend>
-                Jaén a Sierra de la Pandera
-            </legend>
+    <main>
+        <h2>Juegos</h2>
+        <h3>¿Conoces la etapa?</h3>
+        <p>Contesta a estas 10 preguntas sobre la información de la etapa para saber cuanto conoces esta etapa</p>
+        <form>
+            <fieldset>
+                <legend>
+                    Jaén a Sierra de la Pandera
+                </legend>
 
-            <p><label for="nEtapa"> Número Etapa:</label>
-                <input id="nEtapa" type="number" max=21 min=1 placeholder="Escriba el número de la etapa" required />
-            </p>
-             <p><label for="fechaEtapa"> Fecha Etapa:</label>
-                <input id="fechaEtapa" type="date" max="2026-09-13" min="2026-08-22" placeholder="Escriba el número de la etapa" required />
-            </p>
+                <p><label for="nEtapa">1. ¿Cuál es el número de la etapa?</label>
+                    <input id="nEtapa" type="number" max=21 min=1 placeholder="Escriba el número de la etapa"
+                        required />
+                </p>
 
-        </fieldset>
-    </form>
+
+                <p><label for="fechaEtapa">2. ¿En qué fecha se celebra la etapa?</label>
+                    <input id="fechaEtapa" type="date" max="2026-09-13" min="2026-08-22"
+                        placeholder="Escriba el número de la etapa" required />
+                </p>
+
+                <p>
+                    <label for="salida">
+                        3. ¿Cuál es el lugar de salida?
+                    </label>
+                    <select id="salida" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="salida-1">Jaén</option>
+                        <option value="salida-2">Madrid</option>
+                        <option value="salida-3">Sierra de la Pandera</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="llegada">
+                        4. ¿Cuál es el lugar de llegada?
+                    </label>
+                    <select id="llegada" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="llegada-1">Jaén</option>
+                        <option value="llegada-2">Madrid</option>
+                        <option value="llegada-3">Sierra de la Pandera</option>
+                    </select>
+                </p>
+
+                <p>5. ¿Qué tipo de etapa es?</p>
+
+                <p>
+                    <input type="radio" id="llana" name="tipo-etapa" value="llana" required>
+                    <label for="llana">Llana</label>
+                </p>
+
+                <p>
+                    <input type="radio" id="media-montana" name="tipo-etapa" value="media-montana">
+                    <label for="media-montana">Media montaña</label>
+                </p>
+
+                <p>
+                    <input type="radio" id="montana" name="tipo-etapa" value="montana">
+                    <label for="montana">Montaña</label>
+                </p>
+
+                <p>
+                    <input type="radio" id="contrarreloj-individual" name="tipo-etapa" value="contrarreloj-individual">
+                    <label for="contrarreloj-individual">
+                        Contrarreloj individual
+                    </label>
+                </p>
+
+                <p>
+                    <input type="radio" id="contrarreloj-equipos" name="tipo-etapa" value="contrarreloj-equipos">
+                    <label for="contrarreloj-equipos">
+                        Contrarreloj por equipos
+                    </label>
+                </p>
+
+                <p>6. ¿Qué hitos aparecen en la etapa?</p>
+
+                <p>
+                    <input type="checkbox" id="puerto" value="puerto">
+                    <label for="puerto">Puerto de montaña</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="puerto-especial" value="puerto-especial">
+                    <label for="puerto-especial">
+                        Puerto de categoría especial
+                    </label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="sprint" value="sprint">
+                    <label for="sprint">Sprint intermedio</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="sprint-bonificado" value="sprint-bonificado">
+                    <label for="sprint-bonificado">Sprint bonificado</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="sin-hitos" value="sin-hitos">
+                    <label for="sin-hitos">Sin hitos</label>
+                </p>
+
+                <p>
+                    <label for="dureza">
+                        7. ¿Cómo valorarías la dureza de la etapa (1-10)?
+                    </label>
+                    <input type="range" id="dureza" min="1" max="10" value="5">
+                </p>
+
+                <p>
+                    <label for="kilometros">
+                        8. ¿Cuál es la longitud de la etapa en kilómetros?
+                    </label>
+                    <input type="number" id="kilometros" min="0" step="0.1" required>
+                </p>
+
+                <p>
+                    <label for="desnivel">
+                        9. ¿Cuál es el desnivel acumulado de la etapa en metros?
+                    </label>
+                    <input type="number" id="desnivel" min="0" step="1" required>
+                </p>
+
+                <p>
+                    <label for="descripcion">
+                        10. Describe brevemente las características de la etapa.
+                    </label>
+                    <textarea id="descripcion" rows="4" cols="50" required></textarea>
+                </p>
+
+                <p>
+                    <label for="participante">
+                        Nombre del estudiante:
+                    </label>
+                    <input type="text" id="participante" required>
+                </p>
+
+                <p>
+                    <button type="submit">Enviar respuestas</button>
+                </p>
+
+            </fieldset>
+        </form>
+
+    </main>
+    <footer>
+        <p>Trabajo realizado por Sahilpreet Singh Kaur</p>
+        <address>
+            <a href="mailto:UO308272@uniovi.es">UO308272@uniovi.es</a>
+        </address>
+        <p>Universidad de Oviedo</p>
+    </footer>
 
 </body>
 

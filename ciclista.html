@@ -15,100 +15,149 @@
     <!--Enlace a las hojas de estilo-->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="icon" href="multimedia/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
-    <!-- contenido de ciclista.html  -->
     <header>
-        <h1>
-            La LaVuelta2026
-        </h1>
+        <h1><a href="index.html">LaVuelta2026</a></h1>
+        <nav>
+            <a href="index.html" title="Página de inicio del proyecto">Inicio</a>
+            <a href="ciclista.html" title="Información sobre el ciclista" aria-current="page">Ciclista</a>
+            <a href="equipo.html" title="Información sobre el equipo">Equipo</a>
+            <a href="etapa.html" title="Información sobre la etapa">Etapa</a>
+            <a href="meteorologia.html" title="Información meteorológica">Meteorología</a>
+            <a href="clasificaciones.html" title="Clasificaciones de La Vuelta">Clasificaciones</a>
+            <a href="juegos.html" title="Juegos relacionados con La Vuelta">Juegos</a>
+            <a href="ayuda.html" title="Ayuda sobre el proyecto">Ayuda</a>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html" title="Página de inicio del proyecto">Inicio</a>
-        <a href="ciclista.html" title="Información sobre el ciclista">Ciclista</a>
-        <a href="equipo.html" title="Información sobre el equipo">Equipo</a>
-        <a href="etapa.html" title="Información sobre la etapa">Etapa</a>
-        <a href="meteorologia.html" title="Información meteorológica">Meteorología</a>
-        <a href="clasificaciones.html" title="Clasificaciones de La Vuelta">Clasificaciones</a>
-        <a href="juegos.html" title="Juegos relacionados con La Vuelta">Juegos</a>
-        <a href="ayuda.html" title="Ayuda sobre el proyecto">Ayuda</a>
-    </nav>
-    <h2>Clément Berthet</h2>
-    <section>
-        <h3>
-            Datos Personales
-        </h3>
-        <ul>
-            <li>
-                Nombre Completo: Clément Berthet
-            </li>
-            <li>
-                Fecha de Nacimiento: 02/08/1997
-            </li>
-            <li>
-                País de Nacimiento: Francia
-            </li>
-            <li>
-                Equipo: GROUPAMA-FDJ UNITED
-            </li>
-            <li>
-                Dorsal: 91
-            </li>
-        </ul>
-        <img src="multimedia/imgClementBerthet.png" alt="Imagen del ciclista Clément Berthet" width="300" height="455">
-
-    </section>
-    <section>
-        <h3>
-            Datos equipos
-        </h3>
+    <nav aria-label="migas">
         <ol>
-            <li>
-                Delko
-            </li>
-            <li>
-                AG2R Citroën
-            </li>
-            <li>
-                Groupama-FDJ United
-            </li>
+            <li><a href="index.html">Inicio</a></li>
+            <li> &gt;&gt; </li>
+            <li>Ciclista</li>
         </ol>
-    </section>
-    <section>
-        <h3>Temporada 2025</h3>
-        <table>
-            <tr>
-                <th>Nombre del Datos</th>
-                <th>Resultado</th>
-            </tr>
-            <tr>
-                <td>Mercan'Tour Classic Alpes-Maritimes</td>
-                <td>5º</td>
-            </tr>
-            <tr>
-                <td>National Championships France ME - Road Race</td>
-                <td>6º</td>
-            </tr>
-            <tr>
-                <td>Classic Grand Besançon Doubs</td>
-                <td>8º</td>
-            </tr>
-            <tr>
-                <td>Second stage of the Vuelta a Burgos</td>
-                <td>11º</td>
-            </tr>
-            <tr>
-                <td> First stage of the Tour de Romandie</td>
-                <td>12º</td>
-            </tr>
-            <tr>
-                <td>Second stage of the Tour de Romandie </td>
-                <td>13º</td>
-            </tr>
+    </nav>
+    <main>
+        <h2>Clément Berthet</h2>
+        <section>
+            <h3>
+                Datos Personales
+            </h3>
+            <ul>
+                <li>
+                    Nombre Completo: Clément Berthet
+                </li>
+                <li>
+                    Fecha de Nacimiento: 02/08/1997
+                </li>
+                <li>
+                    País de Nacimiento: Francia
+                </li>
+                <li>
+                    Equipo: GROUPAMA-FDJ UNITED
+                </li>
+                <li>
+                    Dorsal: 91
+                </li>
+            </ul>
+            <picture>
+                <source media="(max-width: 768px)" srcset="multimedia/imgClementBerthetMovil.png" width="100"
+                    height="155">
+                <source media="(max-width: 1024px)" srcset="multimedia/imgClementBerthetTablet.png" width="200"
+                    height="303">
+                <img src="multimedia/imgClementBerthet.png" alt="Imagen del ciclista Clément Berthet" width="300"
+                    height="455" />
 
-        </table>
-    </section>
+            </picture>
+        </section>
+        <section>
+            <h3>
+                Datos equipos
+            </h3>
+            <ol>
+                <li>
+                    Delko
+                </li>
+                <li>
+                    AG2R Citroën
+                </li>
+                <li>
+                    Groupama-FDJ United
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h3>Temporada 2025</h3>
+            <table>
+                <tr>
+                    <th>Nombre del Datos</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr>
+                    <td>Mercan'Tour Classic Alpes-Maritimes</td>
+                    <td>5º</td>
+                </tr>
+                <tr>
+                    <td>National Championships France ME - Road Race</td>
+                    <td>6º</td>
+                </tr>
+                <tr>
+                    <td>Classic Grand Besançon Doubs</td>
+                    <td>8º</td>
+                </tr>
+                <tr>
+                    <td>Second stage of the Vuelta a Burgos</td>
+                    <td>11º</td>
+                </tr>
+                <tr>
+                    <td> First stage of the Tour de Romandie</td>
+                    <td>12º</td>
+                </tr>
+                <tr>
+                    <td>Second stage of the Tour de Romandie </td>
+                    <td>13º</td>
+                </tr>
+
+            </table>
+        </section>
+        <section>
+            <h3>Multimedia</h3>
+
+            <p>
+                Equipo
+                <a href="https://www.lavuelta.es/es/equipo/GFC/groupama-fdj-united">
+                    GROUPAMA-FDJ UNITED
+                </a>
+                en la Vuelta Ciclista a España 2026.
+            </p>
+            <h4>Vídeo de presentación del equipo</h4>
+            <video controls poster="multimedia/alineacionEquipo.png">
+                <source src="multimedia/videoPresentacion.mp4" type="video/mp4">
+                <source src="multimedia/videoPresentacion.webm" type="video/webm">
+                Tu navegador no admite la reproducción de vídeo.
+            </video>
+            <h4>Audio</h4>
+
+            <audio controls>
+                <source src="multimedia/audioPresentacion.mp3" type="audio/mpeg">
+                <source src="multimedia/audioPresentacion.wav" type="audio/wav">
+                Tu navegador no admite la reproducción de audio.
+            </audio>
+        </section>
+
+
+
+
+    </main>
+    <footer>
+        <p>Trabajo realizado por Sahilpreet Singh Kaur</p>
+        <address>
+            <a href="mailto:UO308272@uniovi.es">UO308272@uniovi.es</a>
+        </address>
+        <p>Universidad de Oviedo</p>
+    </footer>
 
 
 </body>
