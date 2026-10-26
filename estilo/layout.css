@@ -8,17 +8,20 @@
 /*  Correo electrónico (uniovi): uo308272@uniovi.es */
 /*  Grupo de laboratorio: L.5            */
 /* ***************************************/
+/*Especificidad: 0,0,1*/
 body {
-    margin: 0 auto;
+    margin: 0;
     max-width: 1200px;
 }
 
 /* Cabecera */
+/*Especificidad: 0,0,1*/
 header {
     padding: 1em;
 }
 
 /* Menú de navegación */
+/*Especificidad: 0,0,1*/
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -26,12 +29,14 @@ nav {
 }
 
 /* Contenido principal */
+/*Especificidad: 0,0,1*/
 main {
     padding: 1em;
     min-height: 300px;
 }
 
 /* Pie de página */
+/*Especificidad: 0,0,1*/
 footer {
     padding: 1em;
     text-align: center;
@@ -60,4 +65,126 @@ section:has(picture) picture {
 section:has(picture) ul {
     order: 2;
     list-style: none;
+}
+
+/*Especificidad: 0,0,2*/
+section:has(video) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*Especificidad: 0,0,2*/
+section:has(article) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/*Especificidad: 0,0,3*/
+section:has(article) h3 {
+    grid-column: 1 / -1;
+}
+
+
+/*Especificidad: 0,0,1*/
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "content"
+        "footer";
+    grid-template-rows: auto auto 1fr auto;
+}
+
+
+/*Especificidad: 0,0,1*/
+header {
+    grid-area: header;
+}
+
+/*Especificidad: 0,0,2*/
+header+nav {
+
+    grid-area: nav;
+}
+
+/*Especificidad: 0,0,1*/
+main {
+    grid-area: content;
+}
+
+/*Especificidad: 0,0,1*/
+footer {
+    grid-area: footer;
+}
+
+
+
+
+/*Especificidad: 0,0,1*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*Especificidad: 0,0,1*/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*Especificidad: según los selectores interiores*/
+@media (max-width: 1024px) {
+
+    /*Especificidad: 0,0,1*/
+    header {
+        flex-direction: column;
+    }
+
+    /*Especificidad: 0,0,2*/
+    header nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    /*Especificidad: 0,0,2*/
+    body>nav {
+        display: none;
+    }
+
+    /*Especificidad: 0,0,2*/
+    section:has(article) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    /*Especificidad: 0,0,2*/
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*Especificidad: 0,0,2*/
+    section:has(article) {
+        grid-template-columns: 1fr;
+    }
+
+    /*Especificidad: 0,0,1*/
+    video,
+    audio {
+        max-width: 100%;
+    }
+
 }

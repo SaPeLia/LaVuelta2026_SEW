@@ -11,6 +11,15 @@
 
 
 
+/*
+Gama cromática: gris claro, azul oscuro, negro y blanco.
+Análisis de contraste WCAG:
+- Negro sobre blanco: 21:1 (AAA).
+- Azul sobre blanco: aproximadamente 12,6:1 (AAA).
+- Negro sobre gris claro: aproximadamente 16.96:1 (AAA).
+- Azul sobre gris claro: aproximadamente 10.18:1 (AAA).
+*/
+
 /* Especificidad: 0,1,0 */
 :root {
     --color-principal: #E5E7EB;
@@ -29,7 +38,11 @@ body {
 /* Especificidad: 0,0,1 */
 header {
     background-color: var(--color-principal);
-    color: var(--color-negro);
+}
+
+/* Especificidad: 0,0,1 */
+footer {
+    background-color: var(--color-principal);
 }
 
 /* Especificidad: 0,0,2 */
@@ -57,11 +70,6 @@ nav a {
     font-weight: bold;
 }
 
-/* Especificidad: 0,0,1 */
-footer {
-    background-color: var(--color-principal);
-    color: var(--color-negro);
-}
 
 /*Especificidad: 0,0,2*/
 header a,
@@ -72,7 +80,6 @@ footer a {
 
 /*Especificidad: 0,1,2*/
 nav a[aria-current="page"] {
-    font-weight: bold;
     text-decoration: underline;
 }
 
@@ -97,6 +104,7 @@ nav[aria-label="migas"] a {
     color: var(--color-secundario);
 }
 
+/*Especificidad: 0,1,2*/
 nav[aria-label="migas"] ol {
     color: var(--color-secundario);
 }
@@ -116,4 +124,23 @@ section:has(picture) ul li:nth-child(3) {
 /*Especificidad: 0,1,4*/
 section:has(picture) ul li:nth-child(4) {
     font-weight: bold;
+}
+
+/*Especificidad: 0,0,1*/
+table {
+    border-collapse: collapse;
+}
+
+
+/*Especificidad: 0,0,1*/
+th,
+td {
+    border: 1px solid var(--color-negro);
+    padding: 0.5em;
+}
+
+
+/*Especificidad: 0,0,1*/
+th {
+    text-align: left;
 }
